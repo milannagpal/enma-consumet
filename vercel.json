@@ -1,9 +1,9 @@
 {
   "version": 2,
   "builds": [
-    { "src": "api.consumet.org/index.js", "use": "@vercel/node" }
+    { "src": "api.consumet.org/dist/main.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "api.consumet.org/index.js" }
+    { "src": "/(.*)", "dest": "api.consumet.org/dist/main.js" }
   ]
 }
