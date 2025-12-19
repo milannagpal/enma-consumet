@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Typography */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Custom glow effect */
+.drop-shadow-glow {
+  text-shadow: 0 0 8px rgba(180, 0, 255, 0.6);
+}
+
+/* Hide scrollbars for carousels */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glassmorphism panel */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 12px rgba(180, 0, 255, 0.2);
+  border-radius: 1rem;
+}
